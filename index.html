@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MFCEO</title>
+  </head>
+  <body>
+    <header>
+      <h2 id="text">
+        I am
+        <span>Entreprenuer</span>
+        <span>CEO</span>
+        <span>Author</span>
+        <span>Car Nerd</span>
+        <span>Podcast Host</span>
+        <span>Speaker</span>
+        <span>Force for Good</span>
+        <span>Certified Dominator</span>
+      </h2>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="imgBox">
+            <img src="images/portitem1.jpeg" alt="" />
+          </div>
+          <div class="contentBox">
+            <div class="content">
+              <h2>Responsive card</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio similique excepturi ut culpa cumque voluptatum,
+                minima error placeat hic quos nesciunt! Nisi vel nulla tempore!
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBox">
+            <img src="images/portitem1.jpeg" alt="" />
+          </div>
+          <div class="contentBox">
+            <div class="content">
+              <h2>Responsive card</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio similique excepturi ut culpa cumque voluptatum,
+                minima error placeat hic quos nesciunt! Nisi vel nulla tempore!
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBox">
+            <img src="images/portitem1.jpeg" alt="" />
+          </div>
+          <div class="contentBox">
+            <div class="content">
+              <h2>Responsive card</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio similique excepturi ut culpa cumque voluptatum,
+                minima error placeat hic quos nesciunt! Nisi vel nulla tempore!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatem voluptatum distinctio doloremque placeat dicta beatae
+                deserunt magni asperiores tenetur sed.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBox">
+            <img src="images/portitem1.jpeg" alt="" />
+          </div>
+          <div class="contentBox">
+            <div class="content">
+              <h2>Responsive card</h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio similique excepturi ut culpa cumque voluptatum,
+                minima error placeat hic quos nesciunt! Nisi vel nulla tempore!
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var text = document.getElementById("text");
+      var word = text.getElementsByTagName("span");
+      var i = 0;
+
+      function rotator() {
+        word[i].style.display = "none";
+        i = (i + 1) % word.length;
+        word[i].style.display = "initial";
+      }
+      setInterval(rotator, 1000);
+    </script>
+  </body>
+</html>
